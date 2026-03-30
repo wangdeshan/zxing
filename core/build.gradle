@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    namespace "com.google.zxing"
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 355
+        versionName "3.5.5-SNAPSHOT"
+        multiDexEnabled false
+    }
+}

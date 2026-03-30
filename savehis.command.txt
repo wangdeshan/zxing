@@ -1,0 +1,10 @@
+mvn -DskipTests package android:apk
+mvn -X validate
+mvn help:effective-pom
+mvn help:evaluate -Dexpression=project
+mvn help:evaluate -Dexpression=project.parent
+mvn help:evaluate -Dexpression=project.parent.basedir
+mvn help:evaluate -Dexpression=project.parent.properties
+mvn help:evaluate -Dexpression=project.properties
+mvn install
+mvn install -DskipTests
